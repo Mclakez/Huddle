@@ -84,11 +84,23 @@ footer {
        width: 100%;
 				display: flex;
 				justify-content: flex-end;
+				align-items: center;
 }
-footer img {
-     margin-right: 15px;
-     width: 33px;
+footer .icon-container {
+     margin-right: 13px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
 }
+
+.icon-container svg {
+				transform: scale(1.2);
+}
+
+.icon-container:hover .icon path {
+  fill: hsl(300, 69%, 71%); /* Change this to the desired color */
+}
+
 
 @media(max-width :768px){
 				body {
@@ -132,7 +144,7 @@ footer img {
 								justify-content: center;
 				}
 				
-				footer img {
+				footer img path{
      width: 30px;
      transition: fill 0.3s;
 }
